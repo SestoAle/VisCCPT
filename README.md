@@ -4,13 +4,13 @@ Alessandro Sestini, Linus Gisslén, Joakim Bergdahl, Konrad Tollmar, and Andrew 
 
 This repo contains the Visualization Tool for interpreting the results of the CCPT algorithm.
 
-A link to our paper can be found in [arxiv](https://arxiv.org/pdf/2202.10057)
+A link to our paper can be found in [arxiv](https://arxiv.org/pdf/2202.10057).
 
 For the CCPT algorithm, see this [repo](https://github.com/SestoAle/CCPT).
 
 <br/>
 <p align="center">
-    <img src="imgs/overview.png" width="600">
+    <img src="imgs/overview.png" width="800">
 </p>
 
 # Prerequisites
