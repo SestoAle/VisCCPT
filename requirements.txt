@@ -15,4 +15,9 @@ PyQt5==5.15.6
 scikit-learn
 scipy
 seaborn
-
+joblib
+numba
+qtrangeslider
+scikit-learn-extra
+vispy
+protobuf==3.20.0

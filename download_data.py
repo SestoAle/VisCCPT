@@ -1,6 +1,7 @@
 from sys import platform
 import gdown
 import zipfile
+import os
 
 
 '''--------------'''
@@ -10,13 +11,16 @@ import zipfile
 if platform != 'linux' and platform != 'linux2':
     raise Exception("The environment is available only on Linux")
 
-print("Downloading environment...")
-gdown.download(id="1phfe0bA0bNNvqa_EngWnsgl1-1yWnV3O", output='games/game.zip')
-print("Downloading demonstrations...")
-gdown.download(id="1kudIIzCJ2J0wPJP4oFpkYnCskV2Im4pZ", output='reward_model/dems/demonstrations.zip')
+print("Downloading pre-made data...")
+gdown.download(id="1WMMR4RUpQk2VMnn7JLsHlZ9A-iBh-POR", output='arrays/experiments.zip')
+print("Downloading models...")
+gdown.download(id="1GOjfLQqCBk3DLrOZXkbBF0YHEZttISMm", output='saved/models.zip')
 
 print("Extracting files...")
-with zipfile.ZipFile("games/game.zip", 'r') as zip_ref:
-    zip_ref.extractall("games/")
-with zipfile.ZipFile("reward_model/dems/demonstrations.zip", 'r') as zip_ref:
-    zip_ref.extractall("reward_model/dems/")
+with zipfile.ZipFile("arrays/experiments.zip", 'r') as zip_ref:
+    zip_ref.extractall("arrays/")
+with zipfile.ZipFile("saved/models.zip", 'r') as zip_ref:
+    zip_ref.extractall("saved/")
+
+os.remove('arrays/experiments.zip')
+os.remove('saved/models.zip')
