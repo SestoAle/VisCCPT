@@ -14,7 +14,7 @@ For the CCPT algorithm, see this [repo](https://github.com/SestoAle/CCPT).
 </p>
 
 # Prerequisites
-* The code was tested with **Python v3.6**.
+* The code was tested with **Python v3.7**.
 * To install all required packages:
 ```
 git clone https://github.com/SestoAle/VisCCPT.git
